@@ -1,11 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 
-/**
- * Shared navigation bar used on every page.
- * Props:
- *   - title (string): text shown in the left pill (defaults to "APP KA NAAM")
- */
 export default function Navigation({ title = "APP KA NAAM" }) {
   let navigate;
   try {
