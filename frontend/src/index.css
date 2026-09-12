@@ -1,0 +1,50 @@
+:root {
+  --primary-bg: #050805;
+  --secondary-bg: #0b120c;
+  --card-bg: rgba(11, 18, 12, 0.95);
+  --card-border: rgba(0, 255, 102, 0.25);
+  --neon-green: #00ff66;
+  --neon-green-hover: #39ff14;
+  --neon-green-glow: rgba(0, 255, 102, 0.4);
+  --text-main: #f0fdf4;
+  --text-muted: #86efac;
+  --sans: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+
+  font-family: var(--sans);
+  color-scheme: dark;
+  color: var(--text-main);
+  background-color: var(--primary-bg);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--primary-bg);
+  color: var(--text-main);
+  min-height: 100vh;
+  font-family: var(--sans);
+  overflow-x: hidden;
+}
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+  background: var(--primary-bg);
+  display: flex;
+  flex-direction: column;
+}
+
+/* Outer Card with Thick Neon Green Border & Rounded Corners matching wireframe */
+.thick-neon-card {
+  border: 8px solid var(--neon-green);
+  border-radius: 42px;
+  background-color: var(--secondary-bg);
+  box-shadow: 0 0 50px rgba(0, 255, 102, 0.4), inset 0 0 25px rgba(0, 255, 102, 0.05);
+}
